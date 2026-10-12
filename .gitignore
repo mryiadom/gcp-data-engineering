@@ -218,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Credentials and secrets
+*credentials.json
+*key.json
+service-account*.json
+*.key
+*.pem
+*.p12
+*.tfstate
+*.tfstate.*
+.terraform/
+.secrets/
