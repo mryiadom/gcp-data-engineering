@@ -39,7 +39,7 @@ Created in the Console under Cloud Storage > Buckets > Create.
 
 | Setting | Value |
 |---|---|
-| Name | BUCKET_NAME (pattern: payments-raw, or payments-raw-euw2-xxxx if taken) |
+| Name | payments-raw (BUCKET_NAME in the commands below) |
 | Location | europe-west2 (London), location type Region |
 | Default storage class | Standard |
 | Public access prevention | Enforced |
@@ -67,7 +67,7 @@ Command-line equivalent (one per dataset):
 
 ## 6. Checks
 
-- Bucket, Configuration tab: (paste the Location, Location type and Default storage class lines)
-- Bucket, Permissions tab: (paste what the Public access and access control cards say)
+- Bucket, Configuration tab: Location type Region, Location europe-west2 (London), Default storage class Standard
+- Bucket, Permissions tab: Public access "Not public", Access control "Uniform: No object-level ACLs enabled"
 - payments_raw, Details tab: (paste the Data location line)
 - `gcloud config list`: (paste the project line)
