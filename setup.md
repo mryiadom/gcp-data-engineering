@@ -69,5 +69,8 @@ Command-line equivalent (one per dataset):
 
 - Bucket, Configuration tab: Location type Region, Location europe-west2 (London), Default storage class Standard
 - Bucket, Permissions tab: Public access "Not public", Access control "Uniform: No object-level ACLs enabled"
-- payments_raw, Details tab: (paste the Data location line)
-- `gcloud config list`: (paste the project line)
+- payments_raw, Details tab: Data location europe-west2
+- `gcloud config list`: project = PROJECT_ID
+- Application Default Credentials file present (`Test-Path $env:APPDATA\gcloud\application_default_credentials.json` returns True)
+
+All checks passed on 16 October 2026.
