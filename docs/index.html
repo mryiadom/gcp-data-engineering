@@ -146,15 +146,15 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     <ol class="sessions">
       <li class="done"><span class="mark" aria-hidden="true">&#10003;</span><div class="what"><span class="day">Mon 19 Oct &middot; 2 h</span><span class="title">Safe repository and pull-request workflow</span><span class="obj">Credential files ignored and tested, the main branch protected by rules, and the first changes merged through pull requests.</span></div><span class="state">Done 14 Oct</span></li>
       <li class="done"><span class="mark" aria-hidden="true">&#10003;</span><div class="what"><span class="day">Tue 20 Oct &middot; 2 h</span><span class="title">Cloud project with cost guardrails</span><span class="obj">A billing-enabled Google Cloud project with budget alerts, and command-line access using personal credentials instead of key files.</span></div><span class="state">Done 14 Oct</span></li>
-      <li><span class="mark" aria-hidden="true">&#9675;</span><div class="what"><span class="day">Wed 21 Oct &middot; 2 h</span><span class="title">Python environment and Payments scaffold</span><span class="obj">The Payments project folder, with a virtual environment and pinned dependencies that anyone can rebuild.</span></div><span class="state">Planned</span></li>
-      <li><span class="mark" aria-hidden="true">&#9675;</span><div class="what"><span class="day">Thu 22 Oct &middot; 2 h</span><span class="title">London-region storage from the command line</span><span class="obj">A Cloud Storage bucket and BigQuery dataset in europe-west2 with secure defaults, with every command recorded in setup notes.</span></div><span class="state">Planned</span></li>
+      <li class="done"><span class="mark" aria-hidden="true">&#10003;</span><div class="what"><span class="day">Wed 21 Oct &middot; 2 h</span><span class="title">Python environment and Payments scaffold</span><span class="obj">The Payments project folder, with a virtual environment and pinned dependencies that anyone can rebuild.</span></div><span class="state">Done 14 Oct</span></li>
+      <li><span class="mark" aria-hidden="true">&#9675;</span><div class="what"><span class="day">Thu 22 Oct &middot; 2 h</span><span class="title">London-region storage in the Console</span><span class="obj">A Cloud Storage bucket and three BigQuery datasets in europe-west2 with secure defaults, with the settings recorded in setup notes.</span></div><span class="state">Planned</span></li>
       <li><span class="mark" aria-hidden="true">&#9675;</span><div class="what"><span class="day">Fri 23 Oct &middot; 2 h</span><span class="title">Exam 5.4: monitoring and troubleshooting</span><span class="obj">Choosing the right tool to observe, troubleshoot and control BigQuery workloads and costs, plus a query reporting bytes billed per user and per query.</span></div><span class="state">Planned</span></li>
     </ol>
   </section>
 
   <section aria-labelledby="roadmap">
     <h2 id="roadmap">Roadmap</h2>
-    <p class="note">25 weeks at 5 to 10 hours a week, from 19 October 2026. Each phase ends with a readiness check against the Professional Data Engineer exam guide.</p>
+    <p class="note">26 weeks at 5 to 10 hours a week, from 19 October 2026. Each phase ends with a readiness check against the Professional Data Engineer exam guide.</p>
     <div class="phases">
     <details class="phase" open>
       <summary><h3>Phase 0: Baseline</h3><span class="range">12 to 13 Oct 2026</span><span class="pill done">Done</span></summary>
@@ -188,24 +188,25 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     </details>
     <p class="break">Weeks 10 and 11, 21 Dec to 3 Jan: exam study only.</p>
     <details class="phase">
-      <summary><h3>Phase 3: dbt and the FX project</h3><span class="range">Weeks 12 to 19 &middot; 4 Jan to 28 Feb 2027</span><span class="pill planned">Planned</span></summary>
+      <summary><h3>Phase 3: Terraform, dbt and the FX project</h3><span class="range">Weeks 12 to 20 &middot; 4 Jan to 7 Mar 2027</span><span class="pill planned">Planned</span></summary>
       <ul class="steps">
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Payments models rebuilt in dbt, with tests and lineage docs</span><span class="when">Wk 12&ndash;13</span></li>
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Bank of England exchange-rate ingestion over HTTP</span><span class="when">Wk 14</span></li>
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Synthetic FX trade lifecycle generator</span><span class="when">Wk 15</span></li>
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Trade state, point-in-time rates and counterparty history models</span><span class="when">Wk 16</span></li>
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Positions and revaluation P&amp;L marts with reconciliation checks</span><span class="when">Wk 17</span></li>
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Tests, CI and query-cost evidence</span><span class="when">Wk 18</span></li>
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>README, diagrams, sample outputs and production notes</span><span class="when">Wk 19</span></li>
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Readiness check 3</span><span class="when">Wk 19</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Payments bucket and datasets defined as code in Terraform</span><span class="when">Wk 12</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Payments models rebuilt in dbt, with tests and lineage docs</span><span class="when">Wk 13&ndash;14</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Bank of England exchange-rate ingestion over HTTP</span><span class="when">Wk 15</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Synthetic FX trade lifecycle generator</span><span class="when">Wk 16</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Trade state, point-in-time rates and counterparty history models</span><span class="when">Wk 17</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Positions and revaluation P&amp;L marts with reconciliation checks</span><span class="when">Wk 18</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Tests, CI and query-cost evidence</span><span class="when">Wk 19</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>README, diagrams, sample outputs and production notes</span><span class="when">Wk 20</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Readiness check 3</span><span class="when">Wk 20</span></li>
       </ul>
     </details>
     <details class="phase">
-      <summary><h3>Phase 4: Orchestration and exam run-in</h3><span class="range">Weeks 20 to 25 &middot; 1 Mar to 11 Apr 2027</span><span class="pill planned">Planned</span></summary>
+      <summary><h3>Phase 4: Orchestration and exam run-in</h3><span class="range">Weeks 21 to 26 &middot; 8 Mar to 18 Apr 2027</span><span class="pill planned">Planned</span></summary>
       <ul class="steps">
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Airflow DAGs for both projects, with retries and backfills</span><span class="when">Wk 20&ndash;21</span></li>
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Timed full-length mock exam</span><span class="when">Wk 23</span></li>
-        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Final readiness check</span><span class="when">Wk 25</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Airflow DAGs for both projects, with retries and backfills</span><span class="when">Wk 21&ndash;22</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Timed full-length mock exam</span><span class="when">Wk 24</span></li>
+        <li><span class="mark" aria-hidden="true">&#9675;</span><span>Final readiness check</span><span class="when">Wk 26</span></li>
       </ul>
     </details>
     </div>
@@ -220,7 +221,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
         <ul class="stack" aria-label="Stack"><li>Python</li><li>pytest</li><li>Cloud Storage</li><li>BigQuery</li><li>Dataform</li><li>GitHub Actions</li></ul>
       </article>
       <article class="project">
-        <div class="project-head"><h3>FX trades and positions</h3><span class="pill planned">Planned &middot; weeks 14 to 19</span></div>
+        <div class="project-head"><h3>FX trades and positions</h3><span class="pill planned">Planned &middot; weeks 15 to 20</span></div>
         <p>An FX desk's end-of-day positions and sterling revaluation P&amp;L. Synthetic spot and forward trades with amendments and cancellations are joined to public Bank of England exchange rates, kept as point-in-time history with checks for stale or missing rates.</p>
         <ul class="stack" aria-label="Stack"><li>Python</li><li>Cloud Storage</li><li>BigQuery</li><li>Dataform</li><li>GitHub Actions</li></ul>
       </article>
